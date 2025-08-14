@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre mí | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+  <script>
+	particlesJS("particles-js", {
+		particles: {
+			number: { value: 80, density: { enable: true, value_area: 800 } },
+			color: { value: "#525457" },
+			shape: { type: "circle" },
+			opacity: { value: 0.5 },
+			size: { value: 3 },
+			line_linked: { enable: true, distance: 150, color: "#3976e6", opacity: 0.4, width: 1 },
+			move: { enable: true, speed: 2 }
+		},
+		interactivity: {
+			events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+			modes: { grab: { distance: 200, line_linked: { opacity: 1 } } }
+		},
+		retina_detect: true
+	});
+  </script>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#sobre-mi">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#proyectos">Proyectos</a>
+		</li>
+	</ul>
+	<!-- Perfil -->
+	<div id="profile">
+		<div class="card text-center mb-3" id="profileCard">
+			<div class="card-body">
+				<h1 class="card-title">Hola, soy <b>Guillermo</b> 👋</h5>
+				<h5 class="card-text">Administrador de Sistemas IT y Desarrollador Web, con formación en Ciberseguridad</h5>
+				<!-- Iconos -->
+				<div class="d-flex justify-content-center gap-4 mt-3">
+					<a href="mailto:ggines22@hotmail.com" target="_blank">
+					<i class="bi bi-envelope fs-2 text-dark"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/guillermo-gin%C3%A9s-arenas-28b585369/" target="_blank">
+					<i class="bi bi-linkedin fs-2 text-primary"></i>
+					</a>
+					<a href="https://github.com/ggines" target="_blank">
+					<i class="bi bi-github fs-2 text-dark"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Sobre mí-->
+	<div id="about">
+		<div class="text-center mb-3">
+			<div>
+				<h2 id="sobre-mi"><b>· Sobre mí ·</b></h2>
+				<h5>
+				Después de cursar los ciclos formativos de SMR, ASIR y DAW, decidí estudiar el Máster de Ciberseguridad <br>en Entornos de las Tecnologías de la Información para especializarme en ciberseguridad, ya que sentía curiosidad por este mundillo. <br>Me defino como alguien responsable, organizado y constante en las tareas, con ganas de aprender cosas nuevas y con enfoque en la mejora continua.
+				</h5>
+			</div>
+		</div>
+	</div>
+	<!--Proyectos-->
+	<div id="projects">
+		<div class="text-center mb-3">
+			<div>
+				<h2 id="proyectos"><b>· Proyectos ·</b></h2>
+				<br>
+				<p class="d-inline-flex gap-1">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#ciberseguridad" role="button" aria-expanded="false" aria-controls="ciberseguridad">🔒 Proyecto final de Ciberseguridad 🔒</a>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#tienda" role="button" aria-expanded="false" aria-controls="tienda">🛍 Tienda vulnerable de productos 🛍</a>
+				</p>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="ciberseguridad">
+							<div class="card card-body">
+								Proyecto realizado para el final del Máster de Ciberseguridad
+								<a href="./proyecto-ciberseguridad.html" target="_blank">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="collapse multi-collapse" id="tienda">
+							<div class="card card-body">
+								Tienda online con PHP y MySQL para detectar vulnerabilidades
+								<a href="./tienda-online.html" target="_blank">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p class="d-inline-flex gap-1">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#app" role="button" aria-expanded="false" aria-controls="app">💻 Aplicación web para profesorado💻</a>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#wordpress" role="button" aria-expanded="false" aria-controls="wordpress">🌐 Página web de PB Barcino 🌐</a>
+				</p>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="app">
+							<div class="card card-body">
+								Proyecto realizado para el final del CFGS de Desarrollo de Aplicaciones Web
+								<a href="./app-permisos.html" target="_blank">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="collapse multi-collapse" id="wordpress">
+							<div class="card card-body">
+								Página web realizada para PB Barcino
+								<a href="./wordpress.html" target="_blank">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p class="d-inline-flex gap-1">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#fitness" role="button" aria-expanded="false" aria-controls="fitness">💻 Aplicación web de fitness💻</a>
+				</p>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="fitness">
+							<div class="card card-body">
+								Proyecto realizado durante el CFGS de Desarrollo de Aplicaciones Web
+								<a href="./app-fitness.html" target="_blank">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2025 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>

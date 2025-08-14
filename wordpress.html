@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página web de PB Barcino | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+  <script>
+	particlesJS("particles-js", {
+		particles: {
+			number: { value: 80, density: { enable: true, value_area: 800 } },
+			color: { value: "#525457" },
+			shape: { type: "circle" },
+			opacity: { value: 0.5 },
+			size: { value: 3 },
+			line_linked: { enable: true, distance: 150, color: "#3976e6", opacity: 0.4, width: 1 },
+			move: { enable: true, speed: 2 }
+		},
+		interactivity: {
+			events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+			modes: { grab: { distance: 200, line_linked: { opacity: 1 } } }
+		},
+		retina_detect: true
+	});
+  </script>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Proyectos</a>
+		</li>
+	</ul>
+	<!-- Perfil -->
+	<div id="shopProject">
+		<div class="card text-center mb-3 divProjects">
+			<div class="card-body">
+				<h1 class="card-title"><b>· 🌐 Página web de PB Barcino 🌐️ ·</b></h5>
+				<h5 class="card-text">Página web realizada para el club Penya Barcelonista Barcino</h5>
+				<br>
+				<h3><b>Descripción</b></h3>
+				<p>Renové la página web del Penya Barcelonista Barcino con Wordpress para que tuviese un aspecto más visual y moderno.</p>
+				<br>
+				<a href="https://pbbarcino.com/" target="_blank">Visitar web</a>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/wordpress/barcino-wordpress.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de inicio de PB Barcino">
+				  <figcaption class="figure-caption">Página de inicio de PB Barcino</figcaption>
+				</figure>
+				<br><br>
+				<a class="btn btn-primary" href="index.html" role="button">Ir al inicio</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2025 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda vulnerable de productos | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+  <script>
+	particlesJS("particles-js", {
+		particles: {
+			number: { value: 80, density: { enable: true, value_area: 800 } },
+			color: { value: "#525457" },
+			shape: { type: "circle" },
+			opacity: { value: 0.5 },
+			size: { value: 3 },
+			line_linked: { enable: true, distance: 150, color: "#3976e6", opacity: 0.4, width: 1 },
+			move: { enable: true, speed: 2 }
+		},
+		interactivity: {
+			events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+			modes: { grab: { distance: 200, line_linked: { opacity: 1 } } }
+		},
+		retina_detect: true
+	});
+  </script>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Proyectos</a>
+		</li>
+	</ul>
+	<!-- Perfil -->
+	<div id="shopProject">
+		<div class="card text-center mb-3 divProjects">
+			<div class="card-body">
+				<h1 class="card-title"><b>· 🛍️ Tienda vulnerable de productos 🛍️ ·</b></h5>
+				<h5 class="card-text">Tienda online con PHP y MySQL para detectar vulnerabilidades</h5>
+				<br>
+				<h3><b>Descripción</b></h3>
+				<p>Creé una pequeña tienda online vulnerable con XAMPP usando PHP y MySQL. Esta web contiene:</p>
+				<ul>
+					<li>Buscador de productos</li>
+					<li>Inicio de sesión</li>
+					<li>Registro</li>
+					<li>Ver detalles de productos</li>
+					<li>Cesta de productos</li>
+					<li>Publicar y ver comentarios de otros usuarios</li>
+				</ul>
+				<br><br>
+				<h4><b>Página de inicio</b></h4>
+				<p>En la página de inicio aparecen los 3 productos más vendidos:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/inicio-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de inicio de la tienda online">
+				  <figcaption class="figure-caption">Página de inicio de la tienda online, con los productos de la BDD ordenados por los más vendidos</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Buscador</b></h4>
+				<p>El buscador permite encontrar productos:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/buscador-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Buscador de la tienda online">
+				  <figcaption class="figure-caption">Buscador de la tienda online</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Detalles y comentarios</b></h4>
+				<p>Para cada producto se pueden ver sus detalles. Si iniciamos sesión, podremos publicar comentarios:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/detalles-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Detalles del producto">
+				  <figcaption class="figure-caption">Detalles del producto</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/tienda/comentario-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Comentarios del producto">
+				  <figcaption class="figure-caption">Comentarios del producto</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Cesta</b></h4>
+				<p>La cesta funciona con JavaScript, usando cookies y LocalStorage:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/cesta-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Cesta">
+				  <figcaption class="figure-caption">Cesta</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Inicio de sesión</b></h4>
+				<p>Para iniciar sesión, el usuario debe existir en la BDD:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/login-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Inicio de sesión de la tienda online">
+				  <figcaption class="figure-caption">Inicio de sesión de la tienda online</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Registro</b></h4>
+				<p>El registro creará un nuevo usuario en la BDD:</p>
+				<figure class="figure">
+				  <img src="./img/tienda/registro-tienda.png" class="figure-img img-fluid rounded imgAppWeb" alt="Registro de la tienda online">
+				  <figcaption class="figure-caption">Registro de la tienda online</figcaption>
+				</figure>
+				<br><br>
+				<p>Esta web contiene vulnerabilidades como SQL Injection, XSS o XST para ser explotadas.</p>
+				<br><br>
+				<a class="btn btn-primary" href="index.html" role="button">Ir al inicio</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2025 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>

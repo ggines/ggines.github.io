@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aplicación web de fitness | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+  <script>
+	particlesJS("particles-js", {
+		particles: {
+			number: { value: 80, density: { enable: true, value_area: 800 } },
+			color: { value: "#525457" },
+			shape: { type: "circle" },
+			opacity: { value: 0.5 },
+			size: { value: 3 },
+			line_linked: { enable: true, distance: 150, color: "#3976e6", opacity: 0.4, width: 1 },
+			move: { enable: true, speed: 2 }
+		},
+		interactivity: {
+			events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+			modes: { grab: { distance: 200, line_linked: { opacity: 1 } } }
+		},
+		retina_detect: true
+	});
+  </script>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Proyectos</a>
+		</li>
+	</ul>
+	<!-- Perfil -->
+	<div id="ciberProject">
+		<div class="card text-center mb-3 divProjects">
+			<div class="card-body">
+				<h1 class="card-title"><b>· 💻 Aplicación web de fitness💻 ·</b></h5>
+				<h5 class="card-text">Proyecto realizado durante el CFGS de Desarrollo de Aplicaciones Web</h5>
+				<br>
+				<h3><b>Descripción</b></h3>
+				<p>En este proyecto, junto a mi compañero, creamos una aplicación web de fitness para compartir recetas.</p>
+				<p>La web está hecha con PHP y MySQL, y permite:</p>
+				<ul>
+				  <li>Iniciar sesión</li>
+				  <li>Registrarse</li>
+				  <li>Publicar recetas</li>
+				  <li>Editar y eliminar nuestras recetas</li>
+				  <li>Filtrar recetas por palabra clave</li>
+				  <li>Ver recetas de otros usuarios</li> 
+				  <li>Dar like a las recetas</li>
+				</ul>
+				<br><br>
+				<h4><b>Página de inicio</b></h4>
+				<p>La página de inicio contiene una lista de alimentos en carrusel, las últimas recetas subidas por los usuarios, una calculadora IMC y un calendario:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/inicio-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de inicio de la página de fitness">
+				  <figcaption class="figure-caption">Página de inicio de la página de fitness</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/fitness/carrusel-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Carrusel de la página de inicio">
+				  <figcaption class="figure-caption">Carrusel de la página de inicio</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/fitness/recetas-inicio-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Recetas en la página de inicio">
+				  <figcaption class="figure-caption">Últimas recetas subidas destacadas en la página de inicio</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src=".//img/fitness/imc-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Calculadora IMC con JavaScript en la página de inicio">
+				  <figcaption class="figure-caption">Calculadora IMC con JavaScript en la página de inicio</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/fitness/calendario-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Calendario con JavaScript en la página de inicio">
+				  <figcaption class="figure-caption">Calendario con JavaScript en la página de inicio</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Página de tipos de alimentación</b></h4>
+				<p>Contiene información sobre platos fitness:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/alimentacion-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de tipos de alimentación">
+				  <figcaption class="figure-caption">Página de inicio sobre tipos de alimentación</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Página de quiénes somos</b></h4>
+				<p>Contiene una descripción de la marca ficticia:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/quienes-somos-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de quiénes somos">
+				  <figcaption class="figure-caption">Página de quiénes somos</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Página de contacto</b></h4>
+				<p>Contiene un formulario para enviar los datos a la BDD:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/contacto-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de contacto">
+				  <figcaption class="figure-caption">Página de contacto, con un formulario para enviar los datos</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Página de registro</b></h4>
+				<p>Contiene un formulario para que los usuarios se registren:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/registro-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de registro">
+				  <figcaption class="figure-caption">Página de registro</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Página de inicio de sesión</b></h4>
+				<p>Contiene un formulario para que los usuarios inicien sesión:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/login-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Página de inicio de sesión">
+				  <figcaption class="figure-caption">Página de inicio de sesión</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Espacio para subir recetas</b></h4>
+				<p>Contiene un formulario para rellenar la receta. Solo se puede acceder si iniciamos sesión:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/espacio-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Espacio para subir recetas">
+				  <figcaption class="figure-caption">Espacio para subir recetas</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/fitness/receta-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Receta subida de ejemplo">
+				  <figcaption class="figure-caption">Receta subida de ejemplo</figcaption>
+				</figure>
+				<br><br>
+				<h4><b>Recetas de los usuarios</b></h4>
+				<p>Para cada usuario se pueden ver sus recetas, filtrarlas y dar like:</p>
+				<figure class="figure">
+				  <img src="./img/fitness/gente-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Recetas de los usuarios">
+				  <figcaption class="figure-caption">Recetas de los usuarios</figcaption>
+				</figure>
+				<br><br>
+				<figure class="figure">
+				  <img src="./img/fitness/like-fitness.png" class="figure-img img-fluid rounded imgAppWeb" alt="Botón de likes">
+				  <figcaption class="figure-caption">Botón de likes</figcaption>
+				</figure>
+				<br><br>
+				<a class="btn btn-primary" href="index.html" role="button">Ir al inicio</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2025 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>
