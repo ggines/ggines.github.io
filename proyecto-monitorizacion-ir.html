@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de monitorización e IR | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="js/script.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#stack-title">Stack Tecnológico</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#proyectos">Proyectos</a>
+		</li>
+		<li class="nav-item d-flex align-items-center ps-3">
+			<div class="form-check form-switch mb-0">
+				<input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+				<label class="form-check-label" for="switchCheckDefault"><i class="bi bi-brightness-high-fill"></i>/ <i class="bi bi-moon-fill"></i></label>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="descProject">
+		<div class="card text-center mb-3 divProjects">
+			<div class="card-body">
+				<h1 class="card-title"><b>· 🛡️ Sistema de monitorización e IR 🛡 ·</b></h5>
+				<h5 class="card-text">Implementación de un sistema de monitorización e IR con herramientas open source</h5>
+				<br>
+				<h3><b>Descripción</b></h3>
+				<p>En este proyecto, implementé un sistema de monitorización y respuesta ante incidentes con Grafana, Elasticsearch y Fail2ban.</p>
+				<br>
+				<h4><b>🎯 Objetivo 🎯</b></h4>
+				<p>El objetivo fue diseñar una arquitectura capaz de:</p>
+				<ul>
+					<li>Centralizar logs del sistema</li>
+					<li>Monitorizar intentos de acceso no autorizados</li>
+					<li>Aplicar medidas de hardening</li>
+					<li>Visualizar eventos de seguridad en tiempo real</li>
+				</ul>
+				<br>
+				<h4><b>💻 MVs utilizadas 💻</b></h4>
+				<p>Para este proyecto creé estas MVs:</p>
+				<ul>
+					<li><b>Ubuntu Server 24.04 (Monitor):</b> Contiene Grafana y Elasticsearch para recibir los datos y métricas de la víctima y visualizarlos.</li>
+					<li><b>Ubuntu Server 24.04 (Víctima):</b> Contiene Filebeat, Metricbeat y Fail2ban.</li>
+					<li><b>Kali Linux (Atacante):</b> Realiza los ataques a la máquina víctima.</li>
+				</ul>
+				<br>
+				<h4><b>🛠️ Herramientas usadas 🛠️</b></h4>
+				<ul>
+					<li><b>Grafana:</b> Herramienta para la monitorización y análisis interactivo de métricas y datos en tiempo real.<br>
+					Permite crear dashboards dinámicos y personalizables a partir de diversas fuentes de datos con el fin de monitorizar <br>
+					infraestructuras, aplicaciones y servicios de forma clara.</li>
+					<li><b>Elasticsearch:</b> Motor de búsqueda y analíticas de código abierto que permite almacenar, buscar y analizar<br>
+					grandes volúmenes de datos de forma rápida y escalable usando una API RESTful, siendo ideal para logs, búsqueda de texto completo,<br>
+					analíticas en tiempo real y búsqueda empresarial.</li>
+					<li><b>Filebeat y Metricbeat:</b> Dos agentes ligeros parte de Elastic Stack que se instalan normalmente en servidores <br>
+					para enviar datos a sistemas como Elasticsearch para su indexación. Filebeat se centra en recopilar y reenviar archivos de registro, <br>
+					y Metricbeat se centra en recopilar métricas del sistema operativo y de los servicios que se ejecutan.</li>
+					<li><b>Fail2ban:</b> Herramienta de seguridad capaz de proteger el servidor frente intrusos y accesos no autorizados. <br>
+					Monitoriza los archivos de registro de servicios y bloquea las IPs sospechosas.</li>
+				</ul>
+				<br>
+				<h4><b>✔️ Conclusiones ✔️</b></h4>
+				<p>Se logró construir un sistema funcional que permite:</p>
+				<ul>
+					<li>Detectar intentos de acceso sospechosos</li>
+					<li>Visualizar eventos de seguridad en tiempo real</li>
+					<li>Mantener separación estructurada de logs de seguridad</li>
+					<li>Aplicar respuesta automática ante intrusiones</li>
+				</ul>
+				<p>Este proyecto demuestra cómo la integración de Grafana con Elasticsearch, junto con agentes como Filebeat y Metricbeat, <br>
+				es posible crear un sistema de monitorización centralizado y orientado a la seguridad, funcionando como una alternativa ligera <br>
+				a un SIEM para supervisar eventos y métricas relevantes del sistema.</p>
+				<br>
+				<div class="ratio" style="--bs-aspect-ratio: 80%; max-width: 504px; margin: 0 auto;">
+					<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7434254906124824576?compact=1" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+				</div>
+				<br><br>
+				<a class="btn btn-primary" href="index.html" role="button">Ir al inicio</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2026 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>

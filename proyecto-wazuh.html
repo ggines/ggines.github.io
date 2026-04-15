@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Implementación del SIEM Wazuh | ggines</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="js/script.js"></script>
+  </head>
+  <body>
+  <div id="particles-js"></div>
+
+  <br>
+    <ul class="nav justify-content-center" id="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#stack-title">Stack Tecnológico</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#proyectos">Proyectos</a>
+		</li>
+		<li class="nav-item d-flex align-items-center ps-3">
+			<div class="form-check form-switch mb-0">
+				<input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+				<label class="form-check-label" for="switchCheckDefault"><i class="bi bi-brightness-high-fill"></i>/ <i class="bi bi-moon-fill"></i></label>
+			</div>
+		</li>
+	</ul>
+
+	<div class="descProject">
+		<div class="card text-center mb-3 divProjects">
+			<div class="card-body">
+				<h1 class="card-title"><b>· 🚨 Implementación del SIEM Wazuh 🚨 ·</b></h5>
+				<h5 class="card-text">Implementación y testeo del SIEM Wazuh con VirtualBox</h5>
+				<br>
+				<h3><b>Descripción</b></h3>
+				<p>En este proyecto, desplegué y testeé un entorno SIEM utilizando Wazuh en máquinas virtuales con VirtualBox.</p>
+				<br>
+				<h4><b>🎯 Objetivo 🎯</b></h4>
+				<p>El objetivo fue simular un entorno SIEM y visualizar las alertas generadas tras realizar ataques a un endpoint</p>
+				<br>
+				<h4><b>💻 MVs utilizadas 💻</b></h4>
+				<p>El entorno virtual se estructuró con 2 máquinas virtuales Ubuntu:</p>
+				<ul>
+					<li><b>Ubuntu Server 24.04 (Servidor):</b> Esta máquina aloja el núcleo del sistema, y contiene:
+						<ul>
+							<li><u>Wazuh Manager:</u> Responsable de recopilar, analizar y correlacionar los datos de seguridad.</li>
+							<li><u>Wazuh Dashboard:</u> Proporciona la interfaz web centralizada donde se visualizan las alertas, los informes y la gestión de agentes.</li>
+						</ul>
+					</li>
+					<li><b>Ubuntu Desktop 22.04 (Endpoint/Agente):</b>  Esta máquina actúa como el endpoint monitorizado, y contiene:
+						<ul>
+							<li><u>Wazuh Agent: </u>Es el componente que se instala en los endpoints que queremos monitorizar. <br>
+							Recopila datos de seguridad internos del sistema y los envía de forma segura al Manager para su análisis.</li>
+						</ul>
+					</li>
+					
+				</ul>
+				<br>
+				<h4><b>🛠️ Herramientas externas usadas 🛠️</b></h4>
+				<p>También implementé capacidades avanzadas en el endpoint:</p>
+				<ul>
+					<li><b>Suricata (IDS/IPS):</b> Implementé Suricata para mejorar la detección y prevención de intrusiones a nivel de red, <br>
+					configurando el reenvío de eventos generados por Suricata al Wazuh Manager.</li>
+					<li><b>FIM y YARA (Detección de malware y cambios):</b>
+						<ul>
+							<li><u>FIM (File Integrity Monitoring):</u> Es un proceso de seguridad que permite monitorear y verificar la integridad de archivos y directorios críticos.</li>
+							<li><u>YARA:</u> Son reglas que permiten identificar y clasificar archivos sospechosos mediante patrones (firmas de malware).</li>
+						</ul>
+					</li>
+				</ul>
+				<br>
+				<h4><b>🔬 Metodología de acceso 🔬</b></h4>
+				<p>Tras configurar el entorno, descargué muestras de malware de prueba en el endpoint y las coloqué en el directorio monitorizado.<br>
+				Inmediatamente, YARA detectó los patrones sospechosos y las alertas aparecieron en tiempo real en el dashboard de Wazuh.</p>
+				<br>
+				<h4><b>✔️ Conclusiones ✔️</b></h4>
+				<p>Esta práctica me ha permitido entender mejor el funcionamiento de un SIEM como Wazuh <br>
+				y la importancia de la implementación de herramientas como Suricata, FIM y YARA para reforzar la capacidad de detección.</p>
+				<br>
+				<div class="ratio" style="--bs-aspect-ratio: 80%; max-width: 504px; margin: 0 auto;">
+					<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7404105089541541888?collapsed=1" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+				</div>
+				<br><br>
+				<a class="btn btn-primary" href="index.html" role="button">Ir al inicio</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+	<p class="mb-0">
+		&copy; 2026 Guillermo Ginés — Todos los derechos reservados
+	</p>
+  </footer>
+</html>

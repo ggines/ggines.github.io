@@ -26,7 +26,7 @@
 	color: black;
 }
 
-#profile, #about, #projects{
+#profile, #about, #projects, #stack{
 	padding-top: 80px;
 	display: flex;
 	justify-content: center;
@@ -43,6 +43,10 @@
 	border-radius: 5px;
 }
 
+[data-bs-theme="dark"] .bi-linkedin {
+    color: #dee2e6 !important;
+}
+
 #profileCard {
     transition: transform 0.3s ease; /* Animación suave */
 }
@@ -51,9 +55,13 @@
     transform: scale(1.05); /* 5% más grande */
 }
 
+.badge{
+	border: 2px solid #0d6efd;
+}
 
-/*CSS proyecto-ciberseguridad */
-#ciberProject,#shopProject{
+
+/*CSS proyectos */
+.descProject{
 	padding-top: 80px;
 	display: flex;
 	justify-content: center;
@@ -72,6 +80,14 @@ img{
 .imgAppWeb{
 	width: 80%;
 	height: auto;
+}
+
+.projects-btn{
+	margin-top: 15px;
+}
+
+.collapse-width{
+	max-width: 300px;
 }
 
 /* */
@@ -102,5 +118,9 @@ img{
 	.imgAppWeb{
 		width: auto;
 		height: auto;
+	}
+	
+	.span-margin{
+		margin-top: 10px;
 	}
 }
